@@ -35,29 +35,29 @@ class _LoadingScreenState extends State<LoadingScreen> {
                 height: 230,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.pink[100],
+                  color: Color(0xFFC0B283),
                 ),
               ),
             ),
             Align(
-              alignment: Alignment(-0.10, -1.25),
+              alignment: Alignment(-1.05, -1.25),
               child: Container(
-                width: 230,
-                height: 230,
+                width: 250,
+                height: 250,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.pink[100],
+                  color: Color(0xFFC0B283),
                 ),
               ),
             ),
             Align(
-              alignment: Alignment(1.75, -0.85),
+              alignment: Alignment(1.75, -0.90),
               child: Container(
-                width: 200,
-                height: 200,
+                width: 250,
+                height: 250,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.pink[100],
+                  color: Color(0xFFC0B283),
                 ),
               ),
             ),
@@ -68,29 +68,22 @@ class _LoadingScreenState extends State<LoadingScreen> {
                 height: 250,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color(0xFFDD7E81),
+                  color: Color(0xFF404A42),
                 ),
               ),
             ),
-            Column(
+            const Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset('images/grocelist_logo.png', width: 100, height: 100),
+               children: [
                 SizedBox(height: 20),
-                const Align(
-                  alignment: Alignment(-0.25, 1.0),
+                 Align(
+                  alignment: Alignment(-0.0, 1.0),
                   child: Text(
-                    'SMART',
+                    'Eastudy',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                 ),
-                const Align(
-                  alignment: Alignment(0.15, 1.0),
-                  child: Text(
-                    'GROCELIST',
-                    style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600, color: Colors.pink),
-                  ),
-                ),
+
               ],
             ),
           ],

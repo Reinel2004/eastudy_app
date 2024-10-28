@@ -41,7 +41,6 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       backgroundColor: Colors.white,
       body: Stack(
         children: [
-          // Background circles (copied from LoadingScreen)
           Align(
             alignment: Alignment(-2.20, 1.35),
             child: Container(
@@ -49,29 +48,29 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 230,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.pink[100],
+                color: Color(0xFFC0B283),
               ),
             ),
           ),
           Align(
-            alignment: Alignment(-0.10, -1.25),
+            alignment: Alignment(-1.05, -1.25),
             child: Container(
-              width: 230,
-              height: 230,
+              width: 250,
+              height: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.pink[100],
+                color: Color(0xFFC0B283),
               ),
             ),
           ),
           Align(
-            alignment: Alignment(1.75, -0.85),
+            alignment: Alignment(1.75, -0.90),
             child: Container(
-              width: 200,
-              height: 200,
+              width: 250,
+              height: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.pink[100],
+                color: Color(0xFFC0B283),
               ),
             ),
           ),
@@ -82,36 +81,27 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Color(0xFFDD7E81),
+                color: Color(0xFF404A42),
               ),
             ),
           ),
 
-          // The 'SMART GROCELIST' text
-          Positioned(
-            top: 280,
-            left: 130,
+
+          const Positioned(
+            top: 300,
+            left: 145,
             child: Text(
-              'SMART',
+              'Eastudy',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: Color(0xFF192231),
+                fontFamily: 'Poppins',
+
               ),
             ),
           ),
-          Positioned(
-            top: 320,
-            left: 160,
-            child: Text(
-              'GROCELIST',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Colors.pinkAccent.shade100,
-              ),
-            ),
-          ),
+
 
           // Animated welcome form
           SlideTransition(
@@ -121,7 +111,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               child: Container(
                 height: 350,
                 decoration: BoxDecoration(
-                  color: Colors.redAccent.shade100,
+                  color: Color(0xFFC0B283),
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(30),
                   ),
@@ -158,7 +148,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                               Navigator.pushNamed(context, '/login');
                             },
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.black,
+                              backgroundColor: Color(0xFF404A42),
                               padding: EdgeInsets.symmetric(
                                   horizontal: 50, vertical: 15),
                               shape: RoundedRectangleBorder(
@@ -174,11 +164,11 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           ),
                           ElevatedButton(
                             onPressed: () {
-                              // Handle Sign up action
+                              Navigator.pushNamed(context, '/signup');
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
-                              foregroundColor: Colors.redAccent.shade100,
+                              foregroundColor: Colors.black,
                               padding: EdgeInsets.symmetric(
                                   horizontal: 50, vertical: 15),
                               shape: RoundedRectangleBorder(
